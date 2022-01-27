@@ -1,6 +1,7 @@
 import React from 'react';
 import 'components/InterviewerList.scss';
 import InterviewerListItem from './InterviewerListItem';
+import PropTypes from 'prop-types';
 
 
 const InterviewerList = ({ interviewers, value, onChange }) => {
@@ -22,5 +23,10 @@ const InterviewerList = ({ interviewers, value, onChange }) => {
     </section>
   )
 }
+
+InterviewerList.propTypes = {
+  interviewers: PropTypes.array.isRequired,
+};
+
 
 export default InterviewerList;
